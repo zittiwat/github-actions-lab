@@ -1,15 +1,11 @@
 name: Hello Workflow
-     
 on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
+    branches:
+      - main
 jobs:
   say-hello:
     runs-on: ubuntu-latest
-
     steps:
       - name: Print Hello
         run: echo "Hello GitHub Actions 🚀"
